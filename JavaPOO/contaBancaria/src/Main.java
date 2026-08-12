@@ -3,11 +3,18 @@ void main(){
     Double deposito;
     Double saque;
 
-    ContaBancaria contaBancaria = new ContaBancaria(0.0);
+
+    String titular = IO.readln("\"titular:\")");
+    Double limite = Double.parseDouble(IO.readln("Informe o limite:"));
+    ContaBancaria contaBancaria = new ContaBancaria(0.0, titular, limite);
+
+    System.out.println("Olá, "+ titular);
 
     while (true) {
         System.out.println("\n---ContaBancaria---");
         System.out.println("Seu saldo: " + contaBancaria.getSaldo());
+        System.out.println("Seu ");
+
 
         System.out.println("""
                 O que você deseja fazer?
